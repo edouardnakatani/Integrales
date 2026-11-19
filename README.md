@@ -21,7 +21,7 @@ Les différentes méthodes sont codées dans le fichier Methodes.py et appliqué
 
 Toutes les méthodes que je présente dans ce projet font appel à la décomposition du segment $\displaystyle J = [a, b]$ en $\displaystyle n$ sous-segments de même longueur identique $\displaystyle h = \frac{b - a}{n}$
 
-On note $\displaystyle \forall k \in \llbracket 0, n \rrbracket , t_k = a+kh$ et $\displaystyle \forall k \in \llbracket 0, n-1 \rrbracket , J_k = [t_k, t_{k+1}] = [a+kh, a+(k+1)h]$
+On note $\displaystyle \forall k \in [\![0, n]\!] , t_k = a+kh$ et $\displaystyle \forall k \in [\![0, n-1]\!]  , J_k = [t_k, t_{k+1}] = [a+kh, a+(k+1)h]$
 
 L'intégrale de la fonction $f$ est d'abord approchée sur chaque segment $\displaystyle [t_k, t_{k+1}]$ puis la relation $\displaystyle \int_{a}^{b} f(t) dt = \sum_{k = 0}^{n-1} \int_{t_k}^{t_{k+1}} f(t) dt$ permet de donner une approximation de l'intégrale sur le segment $[a, b]$ en entier en additionnant toutes les valeurs approchées des intégrales sur les sous-segments $J_k$
 
